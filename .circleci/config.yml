@@ -463,7 +463,7 @@ jobs:
               pip install -r requirements.txt --progress-bar off
               pip install imageio imageio-ffmpeg
               git submodule update --init --recursive --jobs 16
-              python -u setup.py install --headless --vhacd -cmake-args='-DCMAKE_CXX_FLAGS="-flto -O3" -DCMAKE_EXE_LINKER_FLAGS="-flto -O3"'
+              python -u setup.py install --headless --vhacd --cmake-args='-DCMAKE_CXX_FLAGS="-flto -O3" -DCMAKE_EXE_LINKER_FLAGS="-flto -O3"'
       - run:
           name: run clang-tidy
           command: |
