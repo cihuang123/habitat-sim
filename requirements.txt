@@ -1,6 +1,6 @@
 attrs>=19.1.0
 gitpython
-imageio
+imageio>=2.9.0
 imageio-ffmpeg
 matplotlib
 numba
